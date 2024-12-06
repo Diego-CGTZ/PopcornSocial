@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=sh!o9q=*av)5p^d=a-lbk59lyju=@nvwg%199o24#htv*4%wn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['popcorn-social.vercel.app']
 CSRF_TRUSTED_ORIGINS = ['https://popcorn-social.vercel.app']
