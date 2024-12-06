@@ -32,3 +32,8 @@ class UserTestCase(TestCase):
         user = User.objects.create_user(username='testuser', password='12345')
         login = self.client.login(username='testuser', password='12345')
         self.assertTrue(login)
+
+    def test_user_authentication_fail(self):
+        user = User.objects.create_user(username='testuser', password='12345')
+        login = self.client.login(username='testuser', password='54321')
+        self.assertFalse(login)
