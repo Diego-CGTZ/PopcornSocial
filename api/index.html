@@ -1,0 +1,8 @@
+from django.core.wsgi import get_wsgi_application
+import os
+
+# Configura las variables de entorno
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'nombre_proyecto.settings')
+
+# Define la aplicación para Vercel
+app = get_wsgi_application()
